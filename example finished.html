@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria Weathington - Portfolio</title>
+    <style>
+      /* General Styles */
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(252, 247, 203);
+        color: #333;
+      }
+
+      header {
+        background-color: #47aed6;
+        color: rgb(13, 14, 10);
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      nav a {
+        color: rgb(185, 116, 25);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      nav a:hover,
+      nav a.active {
+        background-color: #fff;
+        color: #47aed6;
+      }
+
+      section {
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      section:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Home Section */
+      #home {
+        text-align: center;
+      }
+
+      video {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        display: block;
+        border-radius: 10px;
+      }
+
+      .large-text {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      /* About Section */
+      #about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+      }
+
+      #about img {
+        max-width: 300px;
+        border-radius: 10px;
+        flex: 1;
+      }
+
+      #about p {
+        flex: 2;
+      }
+
+      /* Projects Section */
+      #projects .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      #projects .project-item img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+
+      #projects .project-item {
+        text-align: center;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #8bb7c9;
+      }
+
+      footer a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        #about {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        nav {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Maria Weathington - Portfolio</h1>
+      <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <h2>👩🏼‍💻 Hello, I'm Maria Weathington 👩🏼‍💻</h2>
+      <video controls>
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <p class="medium-text">A Software Developer Based in America.</p>
+      <p class="large-text">
+        I specialize in creating efficient and scalable software solutions.
+      </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <img
+        src="https://res.cloudinary.com/dh4vmugll/image/upload/v1735581616/833_l7ek52.jpg"
+        alt="Maria Weathington"
+      />
+      <p>
+        Maria Weathington is a software developer with a passion for coding and
+        design. Born and raised in Detroit, Michigan, Maria discovered her love
+        for programming through SheCodes.io, where her curiosity blossomed into
+        a full-fledged career as a Front-End Developer. Maria was drawn to the
+        limitless possibilities that software development offers. She finds joy
+        in the process of creating and designing solutions, seeing each project
+        as an opportunity to bring ideas to life through code.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <h3>Project 1</h3>
+          <p>
+            This was my very first design that made me passionate about software
+            development. It was created with CSS, HTML, and JavaScript.
+          </p>
+          <img
+            src="https://res.cloudinary.com/dh4vmugll/image/upload/v1735581825/Rick_Smith_Page_project_screenshot_1_icwnfk.jpg"
+            alt="Rick Smith Page"
+          />
+        </div>
+        <div class="project-item">
+          <h3>Project 2</h3>
+          <p>
+            This R&B music project was created with CSS, HTML, and JavaScript.
+          </p>
+          <img
+            src="https://res.cloudinary.com/dh4vmugll/image/upload/v1735581843/RnB_Music_project_screenshot_1_ykkwym.jpg"
+            alt="RnB Music Project"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Contact:
+        <a href="mailto:marieloparis@gmail.com">marieloparis@gmail.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/Marie-313" target="_blank">Marie-313</a>
+      </p>
+      <p>
+        Vercel:
+        <a
+          href="https://vercel.com/marie-313s-projects/reactportfolio/4jN7KqRVHkpqXp2RpN1Wf1zqo3uz"
+          target="_blank"
+          >Marie313</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
